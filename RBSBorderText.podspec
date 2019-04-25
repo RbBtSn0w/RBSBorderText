@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/rbbtsn0w/RBSBorderText'
+  s.homepage         = 'https://github.com/RbBtSn0w/RBSBorderText'
   s.screenshots     = 'https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoEnglish.png', 'https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoJapanese.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rbbtsn0w' => 'hamiltonsnow@gmail.com' }
-  s.source           = { :git => 'https://github.com/rbbtsn0w/RBSBorderText.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/RbBtSn0w/RBSBorderText.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/RbBtSn0w'
 
   s.ios.deployment_target = '7.0'
