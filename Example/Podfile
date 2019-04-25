@@ -2,10 +2,10 @@ use_frameworks!
 
 platform :ios, '8.0'
 
-target 'RBSBorderText_Example' do
+target 'RBSBorderText_iOS_Example' do
   pod 'RBSBorderText', :path => '../'
 
-  target 'RBSBorderText_Tests' do
+  target 'RBSBorderText_iOS_Tests' do
     inherit! :search_paths
 
     

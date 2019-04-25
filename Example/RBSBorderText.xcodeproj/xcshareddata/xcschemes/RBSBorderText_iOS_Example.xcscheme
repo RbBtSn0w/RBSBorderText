@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "RBSBorderText_Example.app"
-               BlueprintName = "RBSBorderText_Example"
+               BuildableName = "RBSBorderText_iOS_Example.app"
+               BlueprintName = "RBSBorderText_iOS_Example"
                ReferencedContainer = "container:RBSBorderText.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "RBSBorderText_Tests.xctest"
-               BlueprintName = "RBSBorderText_Tests"
-               ReferencedContainer = "container:RBSBorderText.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RBSBorderText_Example.app"
-            BlueprintName = "RBSBorderText_Example"
+            BuildableName = "RBSBorderText_iOS_Example.app"
+            BlueprintName = "RBSBorderText_iOS_Example"
             ReferencedContainer = "container:RBSBorderText.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,6 +45,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = "en"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -66,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RBSBorderText_Example.app"
-            BlueprintName = "RBSBorderText_Example"
+            BuildableName = "RBSBorderText_iOS_Example.app"
+            BlueprintName = "RBSBorderText_iOS_Example"
             ReferencedContainer = "container:RBSBorderText.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RBSBorderText_Example.app"
-            BlueprintName = "RBSBorderText_Example"
+            BuildableName = "RBSBorderText_iOS_Example.app"
+            BlueprintName = "RBSBorderText_iOS_Example"
             ReferencedContainer = "container:RBSBorderText.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

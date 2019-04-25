@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0988DBF567ACACF0B590F27F4D1CF175 /* RBSBorderTextLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7767497CDD31C6A5A487211E9E3C9C51 /* RBSBorderTextLayoutManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C390A485FD2F54C1FE46784316DB72C /* Pods-RBSBorderText_iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF264503791F2AC2D8E4A4D2961D39 /* Pods-RBSBorderText_iOS_Example-dummy.m */; };
+		4FE2D3321F0D7A86FD629B8C6249F670 /* RBSBorderTextLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1715631DA35D576D85BB171349CFA690 /* RBSBorderTextLayoutManager.m */; };
+		505F7BDF220EFD979A431CF87B000EEA /* RBSBorderText-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CADE66E1790BFA799344C8154388D0C /* RBSBorderText-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59880AB9C8ED70ED3D3C206DE471D3A7 /* RBSBorderTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E983DD3C681821BAABE640D2F4C5B273 /* RBSBorderTextLabel.m */; };
+		5A14416FACD8A3E7E9C90F867264F1C6 /* RBSBorderTextLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FAB4E5AA4761B93BB105BD7164024C /* RBSBorderTextLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		679ED7BD70F0CCD1A23B319A0EFCE317 /* RBSBorderTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E2E11911E8084DB081AC404F4C5D2A /* RBSBorderTextStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F8036757AA40AAEBBDA89A2D85D8548 /* RBSBorderText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F96AB1482FB0BB382B65348A7AC6A77 /* RBSBorderText-dummy.m */; };
+		767E049A65F48F169984973F129250B2 /* RBSBorderTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31651925AF152D82298E64F8706441 /* RBSBorderTextStyle.m */; };
+		78CF512D01895AD4AB51CB69406FB3A4 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 192384B9E8810F7F48F873DA578F0D4C /* ReplaceMe.m */; };
+		7CA7E272000E9CD0F9A135D0D65A6EA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		825787A12952595941B7FE5CA420CF72 /* Pods-RBSBorderText_iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B202ACFC0A5D1673F6F6B2EACA79867B /* Pods-RBSBorderText_iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EB0DDB6DAED1C66D047DB0A1F9CF976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		BCFF6E41CEAFA1B21879BF4730193326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		D4B60EEE35D90DA0856EEF094FF7B3C5 /* Pods-RBSBorderText_iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A78C9477878A747B3492DBC6CAEBAA3 /* Pods-RBSBorderText_iOS_Tests-dummy.m */; };
+		F85CA18C2C125A1AF9641A0A862CE730 /* Pods-RBSBorderText_iOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE5833A9F83A8FC18AA4F5CD2EE3492 /* Pods-RBSBorderText_iOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28288EB3A3C2FFAEAE61B4EFA6E4DDF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3C79BACB123B8DEAC9172ED235894D;
+			remoteInfo = "Pods-RBSBorderText_iOS_Example";
+		};
+		DB969FF7052FB3062317325CBE51AADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D12C591EE03D326BC2E79D75BEEF1F58;
+			remoteInfo = RBSBorderText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01390554CCBE8B2954568F344BC4A9FC /* RBSBorderText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RBSBorderText.framework; path = RBSBorderText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E22479A7729417FC9A09A45CE2EB61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D29F4FBCBF08A79490C15A00F682BA /* Pods-RBSBorderText_iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSBorderText_iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0CCF264503791F2AC2D8E4A4D2961D39 /* Pods-RBSBorderText_iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBSBorderText_iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		1470D722E7BACCCCFBC04D4FD161B330 /* Pods-RBSBorderText_iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBSBorderText_iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1715631DA35D576D85BB171349CFA690 /* RBSBorderTextLayoutManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBSBorderTextLayoutManager.m; path = RBSBorderText/Classes/RBSBorderTextLayoutManager.m; sourceTree = "<group>"; };
+		176037C78F336580175508E58367A2C8 /* Pods-RBSBorderText_iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSBorderText_iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		192384B9E8810F7F48F873DA578F0D4C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = RBSBorderText/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		32C6E3FB94A50715BF43879914585E4C /* Pods-RBSBorderText_iOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSBorderText_iOS_Example-resources.sh"; sourceTree = "<group>"; };
+		41E1B5E0D52550609A4DF557046DF9AC /* Pods-RBSBorderText_iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBSBorderText_iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A78C9477878A747B3492DBC6CAEBAA3 /* Pods-RBSBorderText_iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBSBorderText_iOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		564749B5E5227AC60FC64627A8E174AF /* Pods-RBSBorderText_iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSBorderText_iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5CADE66E1790BFA799344C8154388D0C /* RBSBorderText-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBSBorderText-umbrella.h"; sourceTree = "<group>"; };
+		6F96AB1482FB0BB382B65348A7AC6A77 /* RBSBorderText-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RBSBorderText-dummy.m"; sourceTree = "<group>"; };
+		7767497CDD31C6A5A487211E9E3C9C51 /* RBSBorderTextLayoutManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBSBorderTextLayoutManager.h; path = RBSBorderText/Classes/RBSBorderTextLayoutManager.h; sourceTree = "<group>"; };
+		7EE5833A9F83A8FC18AA4F5CD2EE3492 /* Pods-RBSBorderText_iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RBSBorderText_iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8496F568B863E358AD9982A826865F20 /* Pods_RBSBorderText_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RBSBorderText_iOS_Example.framework; path = "Pods-RBSBorderText_iOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8651649A8AFB850CCFC5C7E804A6E391 /* Pods-RBSBorderText_iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBSBorderText_iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86E553685AFEE07BA31EFC0126D428D4 /* Pods-RBSBorderText_iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RBSBorderText_iOS_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93ACA063D314D4A74CFA2BB909875B60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D226207AA739976E045392BDF78D37 /* Pods-RBSBorderText_iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSBorderText_iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		96FAB4E5AA4761B93BB105BD7164024C /* RBSBorderTextLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBSBorderTextLabel.h; path = RBSBorderText/Classes/RBSBorderTextLabel.h; sourceTree = "<group>"; };
+		A715BCD39D476799ACAA9D32126AF783 /* Pods-RBSBorderText_iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBSBorderText_iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A971C58B529879B9EEB2AE82805FE4F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD5CE71B372CC8CBFFF29ED8C475E1FA /* Pods-RBSBorderText_iOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSBorderText_iOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B202ACFC0A5D1673F6F6B2EACA79867B /* Pods-RBSBorderText_iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RBSBorderText_iOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		B39398261B452281E191FF19EF0B999E /* Pods-RBSBorderText_iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBSBorderText_iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B52245521A858461ABE6AF6FE3839A93 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B7D3859AAB18735634C7C4DF386947B4 /* RBSBorderText.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = RBSBorderText.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B890B8964BBDCB1D5C472A3264E27525 /* Pods-RBSBorderText_iOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBSBorderText_iOS_Tests-resources.sh"; sourceTree = "<group>"; };
+		C2E2E11911E8084DB081AC404F4C5D2A /* RBSBorderTextStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBSBorderTextStyle.h; path = RBSBorderText/Classes/RBSBorderTextStyle.h; sourceTree = "<group>"; };
+		D1F6DAA36DF074676CCEBD36C30D800F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E2E826D746964A2CF0E58A192463786A /* Pods_RBSBorderText_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RBSBorderText_iOS_Tests.framework; path = "Pods-RBSBorderText_iOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E983DD3C681821BAABE640D2F4C5B273 /* RBSBorderTextLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBSBorderTextLabel.m; path = RBSBorderText/Classes/RBSBorderTextLabel.m; sourceTree = "<group>"; };
+		E9E8BA009A850CAD1F7429339D5D1A34 /* Pods-RBSBorderText_iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RBSBorderText_iOS_Example.modulemap"; sourceTree = "<group>"; };
+		EC31651925AF152D82298E64F8706441 /* RBSBorderTextStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBSBorderTextStyle.m; path = RBSBorderText/Classes/RBSBorderTextStyle.m; sourceTree = "<group>"; };
+		F2FE09060E79FAD1E58BE695D3F1B0D4 /* RBSBorderText.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RBSBorderText.xcconfig; sourceTree = "<group>"; };
+		F35EF2361E16C7FC35129D82BEFFE2E3 /* RBSBorderText.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RBSBorderText.modulemap; sourceTree = "<group>"; };
+		F4FDAA21997A1199ACFD11EC2093C3AB /* RBSBorderText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBSBorderText-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24CC055E8E43D482555A784B0A58463B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB0DDB6DAED1C66D047DB0A1F9CF976 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826825FA433064D9A087323DB3EECE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA7E272000E9CD0F9A135D0D65A6EA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE05AA7F88447673C1B5910F28675B08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF6E41CEAFA1B21879BF4730193326 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0023EC5D9274CDB4C244F6832C524732 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93ACA063D314D4A74CFA2BB909875B60 /* Info.plist */,
+				F35EF2361E16C7FC35129D82BEFFE2E3 /* RBSBorderText.modulemap */,
+				F2FE09060E79FAD1E58BE695D3F1B0D4 /* RBSBorderText.xcconfig */,
+				6F96AB1482FB0BB382B65348A7AC6A77 /* RBSBorderText-dummy.m */,
+				F4FDAA21997A1199ACFD11EC2093C3AB /* RBSBorderText-prefix.pch */,
+				5CADE66E1790BFA799344C8154388D0C /* RBSBorderText-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RBSBorderText";
+			sourceTree = "<group>";
+		};
+		498A4F2EFD520C8962C76FD5DA5CAAC3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE9D738B7E9CAFA7DDD636079C2DAB /* Pods-RBSBorderText_iOS_Example */,
+				C6D9A93524CD62ABC79E1DA72EEF6948 /* Pods-RBSBorderText_iOS_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9DA0DF16E1FD84EB95B988B1262E24A1 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DC83FB30A32DBB756ACFFACEA3A4B32E /* Products */,
+				498A4F2EFD520C8962C76FD5DA5CAAC3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA0DF16E1FD84EB95B988B1262E24A1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF6ADA18578069D1A070F0143CFA336F /* RBSBorderText */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6D9A93524CD62ABC79E1DA72EEF6948 /* Pods-RBSBorderText_iOS_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				03E22479A7729417FC9A09A45CE2EB61 /* Info.plist */,
+				86E553685AFEE07BA31EFC0126D428D4 /* Pods-RBSBorderText_iOS_Tests.modulemap */,
+				41E1B5E0D52550609A4DF557046DF9AC /* Pods-RBSBorderText_iOS_Tests-acknowledgements.markdown */,
+				B39398261B452281E191FF19EF0B999E /* Pods-RBSBorderText_iOS_Tests-acknowledgements.plist */,
+				4A78C9477878A747B3492DBC6CAEBAA3 /* Pods-RBSBorderText_iOS_Tests-dummy.m */,
+				AD5CE71B372CC8CBFFF29ED8C475E1FA /* Pods-RBSBorderText_iOS_Tests-frameworks.sh */,
+				B890B8964BBDCB1D5C472A3264E27525 /* Pods-RBSBorderText_iOS_Tests-resources.sh */,
+				7EE5833A9F83A8FC18AA4F5CD2EE3492 /* Pods-RBSBorderText_iOS_Tests-umbrella.h */,
+				A715BCD39D476799ACAA9D32126AF783 /* Pods-RBSBorderText_iOS_Tests.debug.xcconfig */,
+				176037C78F336580175508E58367A2C8 /* Pods-RBSBorderText_iOS_Tests.release.xcconfig */,
+			);
+			name = "Pods-RBSBorderText_iOS_Tests";
+			path = "Target Support Files/Pods-RBSBorderText_iOS_Tests";
+			sourceTree = "<group>";
+		};
+		CED3584338E19A214D42A8522F4F6470 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D1F6DAA36DF074676CCEBD36C30D800F /* LICENSE */,
+				B7D3859AAB18735634C7C4DF386947B4 /* RBSBorderText.podspec */,
+				B52245521A858461ABE6AF6FE3839A93 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DC83FB30A32DBB756ACFFACEA3A4B32E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8496F568B863E358AD9982A826865F20 /* Pods_RBSBorderText_iOS_Example.framework */,
+				E2E826D746964A2CF0E58A192463786A /* Pods_RBSBorderText_iOS_Tests.framework */,
+				01390554CCBE8B2954568F344BC4A9FC /* RBSBorderText.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1CE9D738B7E9CAFA7DDD636079C2DAB /* Pods-RBSBorderText_iOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A971C58B529879B9EEB2AE82805FE4F2 /* Info.plist */,
+				E9E8BA009A850CAD1F7429339D5D1A34 /* Pods-RBSBorderText_iOS_Example.modulemap */,
+				8651649A8AFB850CCFC5C7E804A6E391 /* Pods-RBSBorderText_iOS_Example-acknowledgements.markdown */,
+				1470D722E7BACCCCFBC04D4FD161B330 /* Pods-RBSBorderText_iOS_Example-acknowledgements.plist */,
+				0CCF264503791F2AC2D8E4A4D2961D39 /* Pods-RBSBorderText_iOS_Example-dummy.m */,
+				94D226207AA739976E045392BDF78D37 /* Pods-RBSBorderText_iOS_Example-frameworks.sh */,
+				32C6E3FB94A50715BF43879914585E4C /* Pods-RBSBorderText_iOS_Example-resources.sh */,
+				B202ACFC0A5D1673F6F6B2EACA79867B /* Pods-RBSBorderText_iOS_Example-umbrella.h */,
+				564749B5E5227AC60FC64627A8E174AF /* Pods-RBSBorderText_iOS_Example.debug.xcconfig */,
+				05D29F4FBCBF08A79490C15A00F682BA /* Pods-RBSBorderText_iOS_Example.release.xcconfig */,
+			);
+			name = "Pods-RBSBorderText_iOS_Example";
+			path = "Target Support Files/Pods-RBSBorderText_iOS_Example";
+			sourceTree = "<group>";
+		};
+		FF6ADA18578069D1A070F0143CFA336F /* RBSBorderText */ = {
+			isa = PBXGroup;
+			children = (
+				96FAB4E5AA4761B93BB105BD7164024C /* RBSBorderTextLabel.h */,
+				E983DD3C681821BAABE640D2F4C5B273 /* RBSBorderTextLabel.m */,
+				7767497CDD31C6A5A487211E9E3C9C51 /* RBSBorderTextLayoutManager.h */,
+				1715631DA35D576D85BB171349CFA690 /* RBSBorderTextLayoutManager.m */,
+				C2E2E11911E8084DB081AC404F4C5D2A /* RBSBorderTextStyle.h */,
+				EC31651925AF152D82298E64F8706441 /* RBSBorderTextStyle.m */,
+				192384B9E8810F7F48F873DA578F0D4C /* ReplaceMe.m */,
+				CED3584338E19A214D42A8522F4F6470 /* Pod */,
+				0023EC5D9274CDB4C244F6832C524732 /* Support Files */,
+			);
+			name = RBSBorderText;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3618CA1EC8DD83B5BC5D88ED429966CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825787A12952595941B7FE5CA420CF72 /* Pods-RBSBorderText_iOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6639CDD4535DED0AF98B6AB60F5AD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505F7BDF220EFD979A431CF87B000EEA /* RBSBorderText-umbrella.h in Headers */,
+				5A14416FACD8A3E7E9C90F867264F1C6 /* RBSBorderTextLabel.h in Headers */,
+				0988DBF567ACACF0B590F27F4D1CF175 /* RBSBorderTextLayoutManager.h in Headers */,
+				679ED7BD70F0CCD1A23B319A0EFCE317 /* RBSBorderTextStyle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C6284A3972966B1F2AB44DC2DDB025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85CA18C2C125A1AF9641A0A862CE730 /* Pods-RBSBorderText_iOS_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5F3C79BACB123B8DEAC9172ED235894D /* Pods-RBSBorderText_iOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510458852AE0D21D404EE5B9F1A714C0 /* Build configuration list for PBXNativeTarget "Pods-RBSBorderText_iOS_Example" */;
+			buildPhases = (
+				F78C800AC4CECCC6C6D8EE5751C11264 /* Sources */,
+				24CC055E8E43D482555A784B0A58463B /* Frameworks */,
+				3618CA1EC8DD83B5BC5D88ED429966CE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E1F536AAE43C9E9C512746ED4189C3 /* PBXTargetDependency */,
+			);
+			name = "Pods-RBSBorderText_iOS_Example";
+			productName = "Pods-RBSBorderText_iOS_Example";
+			productReference = 8496F568B863E358AD9982A826865F20 /* Pods_RBSBorderText_iOS_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71E0CDDA34BD13FBD285780D68C1DB96 /* Pods-RBSBorderText_iOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B362C69E588BEC9D1D65B547C45C6AE /* Build configuration list for PBXNativeTarget "Pods-RBSBorderText_iOS_Tests" */;
+			buildPhases = (
+				E5D6431123524D09766767385EC33A69 /* Sources */,
+				DE05AA7F88447673C1B5910F28675B08 /* Frameworks */,
+				D4C6284A3972966B1F2AB44DC2DDB025 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A8EF2FD5AB1016298409E7B26053F20 /* PBXTargetDependency */,
+			);
+			name = "Pods-RBSBorderText_iOS_Tests";
+			productName = "Pods-RBSBorderText_iOS_Tests";
+			productReference = E2E826D746964A2CF0E58A192463786A /* Pods_RBSBorderText_iOS_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D12C591EE03D326BC2E79D75BEEF1F58 /* RBSBorderText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B110CDD750E0C303E5B0D2B8703A98B7 /* Build configuration list for PBXNativeTarget "RBSBorderText" */;
+			buildPhases = (
+				7E1ACA882276C6644DD0EEC68AA40185 /* Sources */,
+				826825FA433064D9A087323DB3EECE31 /* Frameworks */,
+				CA6639CDD4535DED0AF98B6AB60F5AD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBSBorderText;
+			productName = RBSBorderText;
+			productReference = 01390554CCBE8B2954568F344BC4A9FC /* RBSBorderText.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DC83FB30A32DBB756ACFFACEA3A4B32E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F3C79BACB123B8DEAC9172ED235894D /* Pods-RBSBorderText_iOS_Example */,
+				71E0CDDA34BD13FBD285780D68C1DB96 /* Pods-RBSBorderText_iOS_Tests */,
+				D12C591EE03D326BC2E79D75BEEF1F58 /* RBSBorderText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E1ACA882276C6644DD0EEC68AA40185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8036757AA40AAEBBDA89A2D85D8548 /* RBSBorderText-dummy.m in Sources */,
+				59880AB9C8ED70ED3D3C206DE471D3A7 /* RBSBorderTextLabel.m in Sources */,
+				4FE2D3321F0D7A86FD629B8C6249F670 /* RBSBorderTextLayoutManager.m in Sources */,
+				767E049A65F48F169984973F129250B2 /* RBSBorderTextStyle.m in Sources */,
+				78CF512D01895AD4AB51CB69406FB3A4 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D6431123524D09766767385EC33A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B60EEE35D90DA0856EEF094FF7B3C5 /* Pods-RBSBorderText_iOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78C800AC4CECCC6C6D8EE5751C11264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C390A485FD2F54C1FE46784316DB72C /* Pods-RBSBorderText_iOS_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71E1F536AAE43C9E9C512746ED4189C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RBSBorderText;
+			target = D12C591EE03D326BC2E79D75BEEF1F58 /* RBSBorderText */;
+			targetProxy = DB969FF7052FB3062317325CBE51AADB /* PBXContainerItemProxy */;
+		};
+		7A8EF2FD5AB1016298409E7B26053F20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RBSBorderText_iOS_Example";
+			target = 5F3C79BACB123B8DEAC9172ED235894D /* Pods-RBSBorderText_iOS_Example */;
+			targetProxy = 28288EB3A3C2FFAEAE61B4EFA6E4DDF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05E600B0A3401BD8682AE9277F208CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176037C78F336580175508E58367A2C8 /* Pods-RBSBorderText_iOS_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Tests/Pods-RBSBorderText_iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1F835B63D86842CCA5019A5E46DB1784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A715BCD39D476799ACAA9D32126AF783 /* Pods-RBSBorderText_iOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Tests/Pods-RBSBorderText_iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		807C186641535A84F5AEE4E48E14696B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D29F4FBCBF08A79490C15A00F682BA /* Pods-RBSBorderText_iOS_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Example/Pods-RBSBorderText_iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A07D794A923279ACD117DE5E1A24280D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FE09060E79FAD1E58BE695D3F1B0D4 /* RBSBorderText.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RBSBorderText/RBSBorderText-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RBSBorderText/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RBSBorderText/RBSBorderText.modulemap";
+				PRODUCT_MODULE_NAME = RBSBorderText;
+				PRODUCT_NAME = RBSBorderText;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D275E475E427EC5FDAE9D83CD794EE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FE09060E79FAD1E58BE695D3F1B0D4 /* RBSBorderText.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RBSBorderText/RBSBorderText-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RBSBorderText/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RBSBorderText/RBSBorderText.modulemap";
+				PRODUCT_MODULE_NAME = RBSBorderText;
+				PRODUCT_NAME = RBSBorderText;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECC8CA905BD1BB3DFD430AF5B37F6DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564749B5E5227AC60FC64627A8E174AF /* Pods-RBSBorderText_iOS_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBSBorderText_iOS_Example/Pods-RBSBorderText_iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B362C69E588BEC9D1D65B547C45C6AE /* Build configuration list for PBXNativeTarget "Pods-RBSBorderText_iOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F835B63D86842CCA5019A5E46DB1784 /* Debug */,
+				05E600B0A3401BD8682AE9277F208CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		510458852AE0D21D404EE5B9F1A714C0 /* Build configuration list for PBXNativeTarget "Pods-RBSBorderText_iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC8CA905BD1BB3DFD430AF5B37F6DD5 /* Debug */,
+				807C186641535A84F5AEE4E48E14696B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B110CDD750E0C303E5B0D2B8703A98B7 /* Build configuration list for PBXNativeTarget "RBSBorderText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D275E475E427EC5FDAE9D83CD794EE28 /* Debug */,
+				A07D794A923279ACD117DE5E1A24280D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
