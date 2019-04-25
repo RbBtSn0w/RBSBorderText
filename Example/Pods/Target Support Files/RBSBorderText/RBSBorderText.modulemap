@@ -1,6 +1,0 @@
-framework module RBSBorderText {
-  umbrella header "RBSBorderText-umbrella.h"
-
-  export *
-  module * { export * }
-}
