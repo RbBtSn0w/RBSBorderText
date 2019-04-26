@@ -7,7 +7,7 @@
 
 ## Example
 
-![]<img src="https://github.com/RbBtSn0w/RBSBorderText/blob/master/animated.gif" width="300">
+![image](https://github.com/RbBtSn0w/RBSBorderText/blob/master/animated.gif)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
