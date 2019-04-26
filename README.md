@@ -7,8 +7,7 @@
 
 ## Example
 
-<img src="https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoEnglish.png" width="300"><img src="https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoJapanese.png" width="300">
-<img src="https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoKorean.png" width="300"><img src="https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoVietnamese.png" width="300">
+![]<img src="https://github.com/RbBtSn0w/RBSBorderText/blob/master/animated.gif" width="300">
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
