@@ -46,15 +46,12 @@
     NSString *tagString = NSLocalizedString(@"Hello Border Text!", nil);
     NSString *subTitle = @"SubTitle";
     
-    NSMutableString *mString = [[NSMutableString alloc] initWithString:tagString];
-    [mString insertString:@"   " atIndex:0];
-    [mString appendString:@"   "];
     
     RBSBorderTextStyle *borderStyle = [[RBSBorderTextStyle alloc] init];
     borderStyle.color = [UIColor greenColor];
     borderStyle.fillColorOnBackground = YES;
     
-    NSTextStorage *textStorage = [[NSTextStorage alloc] initWithString:mString
+    NSTextStorage *textStorage = [[NSTextStorage alloc] initWithString:[self makeBorderMStringWithBaseString:tagString]
                                                             attributes:@{
                                                                          RBSBorderTextStyleAttributeName: borderStyle,
                                                                          NSForegroundColorAttributeName: [UIColor blueColor],
@@ -63,12 +60,45 @@
     
     NSAttributedString *subMString = [[NSAttributedString alloc] initWithString:subTitle
                                                                      attributes:@{
-                                                                                  NSFontAttributeName: [UIFont systemFontOfSize:22],
+                                                                                  NSFontAttributeName: [UIFont systemFontOfSize:18],
                                                                                   NSForegroundColorAttributeName: [UIColor blackColor],
                                                                                   }];
     [textStorage appendAttributedString:subMString];
     
+    
+    tagString = NSLocalizedString(@"Glyph", nil);
+    borderStyle = [[RBSBorderTextStyle alloc] init];
+    borderStyle.color = [UIColor redColor];
+    NSAttributedString *borderAttributedString = [[NSAttributedString alloc] initWithString:[self makeBorderMStringWithBaseString:tagString]
+                                                                                 attributes:@{
+                                                                                              RBSBorderTextStyleAttributeName: borderStyle,
+                                                                                              NSForegroundColorAttributeName: [UIColor blueColor],
+                                                                                              NSFontAttributeName: [UIFont systemFontOfSize:18]
+                                                                                              }];
+    [textStorage appendAttributedString:borderAttributedString];
+    
+    
+    tagString = NSLocalizedString(@"Character", nil);
+    borderStyle = [[RBSBorderTextStyle alloc] init];
+    borderStyle.color = [UIColor yellowColor];
+    borderStyle.fillColorOnBackground = YES;
+    borderAttributedString = [[NSAttributedString alloc] initWithString:[self makeBorderMStringWithBaseString:tagString]
+                                                             attributes:@{
+                                                                          RBSBorderTextStyleAttributeName: borderStyle,
+                                                                          NSForegroundColorAttributeName: [UIColor blueColor],
+                                                                          NSFontAttributeName: [UIFont systemFontOfSize:18]
+                                                                          }];
+    [textStorage appendAttributedString:borderAttributedString];
+    
+    
     return textStorage;
 }
 
+
+- (NSString *)makeBorderMStringWithBaseString:(NSString*)string {
+    NSMutableString *tagMString = [[NSMutableString alloc] initWithString:string];
+    [tagMString insertString:@"   " atIndex:0];
+    [tagMString appendString:@"   "];
+    return tagMString;
+}
 @end
