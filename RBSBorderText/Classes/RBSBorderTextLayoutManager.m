@@ -8,6 +8,13 @@
 #import "RBSBorderTextLayoutManager.h"
 #import "RBSBorderTextStyle.h"
 
+#if RBSLogEnable
+#define RBSLOG(frmt, ...) NSLog(@"%@",[NSString stringWithFormat:frmt, ##__VA_ARGS__]);
+#else
+#define RBSLOG(frmt, ...)
+#endif
+
+
 
 @implementation RBSBorderTextLayoutManager
 
@@ -19,42 +26,77 @@
 
 - (void)drawBackgroundForGlyphRange:(NSRange)glyphsToShow atPoint:(CGPoint)origin {
     [super drawBackgroundForGlyphRange:glyphsToShow atPoint:origin];
-    //NSLog(@"[TextLayout] drawBackgroundForGlyphRange %@", NSStringFromRange(glyphsToShow));
+    RBSLOG(@"[TextLayout] drawBackgroundForGlyphRange:%@ origin:%@", NSStringFromRange(glyphsToShow),NSStringFromCGPoint(origin));
     
-    [self enumerateLineFragmentsForGlyphRange:glyphsToShow usingBlock:^(CGRect rect, CGRect usedRect, NSTextContainer * _Nonnull textContainer, NSRange glyphRangeByFilter, BOOL * _Nonnull stop) {
+    [self enumerateLineFragmentsForGlyphRange:glyphsToShow usingBlock:^(CGRect rect, CGRect usedRect, NSTextContainer * _Nonnull textContainer, NSRange lineGlyphRange, BOOL * _Nonnull stop) {
         
-        //NSLog(@"[TextLayout] enumerateLineFragmentsForGlyphRange rect:%@, usedRect:%@", NSStringFromCGRect(rect), NSStringFromCGRect(rect));
+        RBSLOG(@"[TextLayout] enumerateLineFragmentsForGlyphRange rect:%@, usedRect:%@", NSStringFromCGRect(rect), NSStringFromCGRect(usedRect));
         
-        //NSLog(@"[TextLayout] begin glyphRange %@", NSStringFromRange(glyphRangeByFilter));
+        RBSLOG(@"[TextLayout] line glyphRange %@", NSStringFromRange(lineGlyphRange));
         //find underline on the border frame
-        while (glyphRangeByFilter.length > 0) {
-            NSRange charRange = [self characterRangeForGlyphRange:glyphRangeByFilter actualGlyphRange:nil];
+        while (lineGlyphRange.length > 0) {
+            NSRange charRange = [self characterRangeForGlyphRange:lineGlyphRange actualGlyphRange:nil];
             NSRange attributeCharRange;
             NSRange attributeGlyphRange;
-            
+        
+            RBSLOG(@"[TextLayout] charRange:%@", NSStringFromRange(charRange));
             id attribute = [self.textStorage attribute:RBSBorderTextStyleAttributeName
                                                atIndex:charRange.location longestEffectiveRange:&attributeCharRange
                                                inRange:charRange];
+            RBSLOG(@"[TextLayout] attributeCharRange:%@", NSStringFromRange(attributeCharRange));
+            
             attributeGlyphRange = [self glyphRangeForCharacterRange:attributeCharRange actualCharacterRange:NULL];
-            attributeGlyphRange = NSIntersectionRange(attributeGlyphRange, glyphRangeByFilter);
+            RBSLOG(@"[TextLayout] attributeGlyphRange:%@", NSStringFromRange(attributeGlyphRange));
+            
+            attributeGlyphRange = NSIntersectionRange(attributeGlyphRange, lineGlyphRange);
+            RBSLOG(@"[TextLayout] NSIntersectionRange:%@", NSStringFromRange(attributeGlyphRange));
+            
             if( attribute != nil ) {
                 //find it
+                #if 0
+                //when use tail font. the boundingRectForGlyphRange return incorrect value.
+                CGRect boundingRect = [self boundingRectForGlyphRange:attributeGlyphRange inTextContainer:textContainer];
+                #else
+                CGRect boundingRect = usedRect;
+                // Left border (== position) of first underlined glyph
+                CGFloat firstPosition = [self locationForGlyphAtIndex: attributeGlyphRange.location].x;
+                
+                // Right border (== position + width) of last underlined glyph
+                CGFloat lastPosition;
+                
+                // When link is not the last text in line, just use the location of the next glyph
+                if (NSMaxRange(attributeGlyphRange) < NSMaxRange(lineGlyphRange)) {
+                    lastPosition = [self locationForGlyphAtIndex: NSMaxRange(attributeGlyphRange)].x;
+                }
+                // Otherwise get the end of the actually used rect
+                else {
+                    lastPosition = [self lineFragmentUsedRectForGlyphAtIndex:NSMaxRange(attributeGlyphRange)-1 effectiveRange:NULL].size.width;
+                }
+
+                
+                // Inset line fragment to underlined area
+                boundingRect.origin.x += firstPosition;
+                boundingRect.size.width = lastPosition - firstPosition;
+                boundingRect.size.height = usedRect.size.height;
+                
+                // Offset line by container origin
+                boundingRect.origin.x += origin.x;
+                boundingRect.origin.y += origin.y;
+                #endif
                 
                 RBSBorderTextStyle *borderTextStyle = attribute;
-                
-                CGRect boundingRect = [self boundingRectForGlyphRange:attributeGlyphRange inTextContainer:textContainer];
                 [self drawBorder:boundingRect withFill:borderTextStyle.fillColorOnBackground byColor:borderTextStyle.color];
-                
-                //NSLog(@"[TextLayout] attributeGlyphRange %@, origin:%@ boundingRect:%@", NSStringFromRange(attributeGlyphRange), NSStringFromCGPoint(origin), NSStringFromCGRect(boundingRect));
+
+                RBSLOG(@"[TextLayout] attributeGlyphRange %@, boundingRect:%@", NSStringFromRange(attributeGlyphRange), NSStringFromCGRect(boundingRect));
             }
-            glyphRangeByFilter.length = NSMaxRange(glyphRangeByFilter) - NSMaxRange(attributeGlyphRange);
-            glyphRangeByFilter.location = NSMaxRange(attributeGlyphRange);
+            lineGlyphRange.length = NSMaxRange(lineGlyphRange) - NSMaxRange(attributeGlyphRange);
+            lineGlyphRange.location = NSMaxRange(attributeGlyphRange);
             
         }
     }];
     
     
-    //NSLog(@"[TextLayout] end Search");
+    RBSLOG(@"[TextLayout] end Search");
 }
 
 
