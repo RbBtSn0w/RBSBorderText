@@ -7,7 +7,7 @@
 
 ## Example
 
-![image](https://github.com/RbBtSn0w/RBSBorderText/blob/master/animated.gif {width=3000px})
+![image](https://github.com/RbBtSn0w/RBSBorderText/blob/master/animated.gif=350x)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
