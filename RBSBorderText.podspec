@@ -22,7 +22,7 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/RbBtSn0w/RBSBorderText'
-  s.screenshots     = 'https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoEnglish.png', 'https://github.com/RbBtSn0w/RBSBorderText/blob/master/DemoJapanese.png'
+  s.screenshots     = 'https://github.com/RbBtSn0w/RBSBorderText/blob/master/animated.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rbbtsn0w' => 'hamiltonsnow@gmail.com' }
   s.source           = { :git => 'https://github.com/RbBtSn0w/RBSBorderText.git', :tag => s.version.to_s }
